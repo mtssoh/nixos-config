@@ -6,6 +6,8 @@
     <home-manager/nixos>
     ../common/config-common.nix
   ];
+
+  networking.hostName = "win11";
   
   users.users.matias = {
     uid = 1001;
