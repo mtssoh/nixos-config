@@ -1,0 +1,41 @@
+{ pkgs, ... }:
+
+{
+  imports = [
+    ./shell-home.nix
+    ./dev-home.nix
+  ];
+
+  home = {
+    stateVersion = "26.05";
+    packages = with pkgs; [
+      fastfetch eza fd tldr ripgrep 
+    ];
+    username = "matias";
+    homeDirectory = "/home/matias";
+    shellAliases.clip = "clip.exe";
+  };
+
+  programs = {
+    helix = {
+      extraPackages = with pkgs; [ jdt-language-server ];
+      languages = {
+        language-server = {
+          jdtls = {
+            command = "jdtls";
+            config.settings.java = {
+              configuration.runtimes = [
+                { name = "JavaSE-25"; path = "${pkgs.jdk25}/lib/openjdk"; default = true; }
+                { name = "JavaSE-1.8"; path = "${pkgs.jdk8}/lib/openjdk"; }
+              ];
+            };
+          };
+        };
+        language = [
+          { name = "java"; language-servers = [ "jdtls" ]; }
+        ];
+      };
+    };
+  };
+
+}
