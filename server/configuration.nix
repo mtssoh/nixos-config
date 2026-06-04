@@ -33,12 +33,17 @@
   };
 
   users.users."matias" = {
-    extraGroups = [ "wheel" ];
+    extraGroups = [ "wheel" "docker" ];
   };
 
   environment.systemPackages = with pkgs; [];
 
-  services.openssh.enable = true;
+  services = {
+    openssh.enable = true;
+    tailscale.enable = true;
+  };
+
+  virtualisation.docker.enable = true;
 
   home-manager.users.matias = import ./home.nix;
 
