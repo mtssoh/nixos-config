@@ -6,6 +6,7 @@
     [ 
       ./hardware-configuration.nix
       <home-manager/nixos>
+      ../common/config-common.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
@@ -31,28 +32,15 @@
     LC_TIME = "es_PY.UTF-8";
   };
 
-  environment.sessionVariables.COLORTERM = "truecolor";
-
   users.users."matias" = {
-    isNormalUser = true;
-    description = "Matias Dominguez";
     extraGroups = [ "wheel" ];
-    shell = pkgs.zsh;
   };
-
-  programs.zsh.enable = true;
-
-  nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [];
 
   services.openssh.enable = true;
 
-  home-manager = {
-    useGlobalPkgs = true;
-    useUserPackages = true;
-    users.matias = import ./home.nix;
-  };
+  home-manager.users.matias = import ./home.nix;
 
   system.stateVersion = "26.05"; 
 
