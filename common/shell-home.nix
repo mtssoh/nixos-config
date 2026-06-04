@@ -36,7 +36,7 @@
       autocd = true;
       oh-my-zsh = {
         enable = true;
-        theme = "clean";
+        theme = "flazz";
       };
       history.size = 50000;
     };
