@@ -22,4 +22,5 @@
       nix-direnv.enable = true;
     };
   };
+  home.sessionVariables.COLORTERM = "truecolor";
 }
