@@ -2,8 +2,8 @@
 
 {
   imports = [
-    ./shell-home.nix
-    ./dev-home.nix
+    ../common/shell-home.nix
+    ../common/dev-home.nix
   ];
 
   home = {
