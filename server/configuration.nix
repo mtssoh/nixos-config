@@ -36,7 +36,9 @@
     extraGroups = [ "wheel" "docker" ];
   };
 
-  environment.systemPackages = with pkgs; [];
+  environment.systemPackages = with pkgs; [
+    htop
+  ];
 
   services = {
     openssh.enable = true;
