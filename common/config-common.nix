@@ -9,6 +9,7 @@
   time.timeZone = "America/Asuncion";
 
   i18n.defaultLocale = "en_US.UTF-8";
+
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "es_PY.UTF-8";
     LC_IDENTIFICATION = "es_PY.UTF-8";
