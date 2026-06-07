@@ -16,6 +16,8 @@
     shellAliases.clip = "clip.exe";
   };
 
+  services.ssh-agent.enable = true;
+
   programs = {
     helix = {
       extraPackages = with pkgs; [ jdt-language-server ];
