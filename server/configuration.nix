@@ -21,7 +21,7 @@
   };
 
   environment.systemPackages = with pkgs; [
-    htop
+    htop awscli2
   ];
 
   services = {
