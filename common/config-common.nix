@@ -22,7 +22,10 @@
     LC_TIME = "es_PY.UTF-8";
   };
 
-  environment.variables.COLORTERM = "truecolor";
+  environment = {
+    systemPackages = with pkgs; [ rsync ];
+    variables.COLORTERM = "truecolor";
+  };
 
   programs = {
     zsh.enable = true;
