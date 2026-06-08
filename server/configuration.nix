@@ -21,7 +21,7 @@
   };
 
   environment.systemPackages = with pkgs; [
-    htop awscli2
+    htop awscli2 cloudflared
   ];
 
   services = {
