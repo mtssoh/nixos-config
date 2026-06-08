@@ -25,6 +25,7 @@
         language-server = {
           jdtls = {
             command = "jdtls";
+            args = [ "--jvm-arg=-javaagent:${pkgs.lombok}/share/java/lombok.jar" ];
             config.settings.java = {
               configuration.runtimes = [
                 { name = "JavaSE-25"; path = "${pkgs.jdk25}/lib/openjdk"; default = true; }
