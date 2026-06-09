@@ -20,7 +20,7 @@
 
   programs = {
     helix = {
-      extraPackages = with pkgs; [ jdt-language-server ];
+      extraPackages = with pkgs; [ jdt-language-server clang-tools ];
       languages = {
         language-server = {
           jdtls = {
