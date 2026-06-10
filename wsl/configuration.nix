@@ -23,8 +23,16 @@
     ];
   };
 
-  wsl.enable = true;
-  wsl.defaultUser = "matias";
+  wsl = {
+    enable = true;
+    defaultUser = "matias";
+    docker-desktop.enable = true;
+    useWindowsDriver = true;
+    interop = {
+      includePath = true;
+      register = true;
+    };
+  };
 
   home-manager.users.matias = import ./home.nix;
   environment.sessionVariables = {

@@ -20,6 +20,8 @@
     htop awscli2 cloudflared
   ];
 
+  virtualisation.docker.enable = true;
+
   home-manager.users.matias = import ./home.nix;
 
   system.stateVersion = "26.05"; 

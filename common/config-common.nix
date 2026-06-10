@@ -38,7 +38,6 @@
     tailscale.enable = true;
   };
   
-  virtualisation.docker.enable = true;
 
   nixpkgs.config.allowUnfree = true;
 
