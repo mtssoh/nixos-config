@@ -23,7 +23,7 @@
   };
 
   environment = {
-    systemPackages = with pkgs; [ rsync ];
+    systemPackages = with pkgs; [ rsync wget ];
     variables.COLORTERM = "truecolor";
   };
 

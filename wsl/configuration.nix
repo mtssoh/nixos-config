@@ -17,7 +17,7 @@
   environment = {
     systemPackages = with pkgs; [
       zip unzip claude-code postgresql
-      curl wget cloudflared 
+      curl cloudflared 
 
       (pkgs.writeShellScriptBin "foot-tmux" ''
           cd ~
