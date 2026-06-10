@@ -18,6 +18,11 @@
     systemPackages = with pkgs; [
       zip unzip claude-code postgresql
       curl wget cloudflared 
+
+      (pkgs.writeShellScriptBin "foot-tmux" ''
+          cd ~
+          exec foot -e tmux new-session -A -s main
+        '')
     ];
   };
 
