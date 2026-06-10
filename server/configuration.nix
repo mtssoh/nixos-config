@@ -16,10 +16,6 @@
 
   networking.hostName = "nix-mach";
 
-  users.users."matias" = {
-    extraGroups = [ "wheel" "docker" ];
-  };
-
   environment.systemPackages = with pkgs; [
     htop awscli2 cloudflared
   ];
@@ -29,7 +25,6 @@
     tailscale.enable = true;
   };
 
-  virtualisation.docker.enable = true;
 
   home-manager.users.matias = import ./home.nix;
 

@@ -9,10 +9,7 @@
 
   networking.hostName = "win11";
   
-  users.users.matias = {
-    uid = 1001;
-    extraGroups = ["wheel" "users"];
-  };
+  users.users.matias.uid = 1001;
 
   environment = {
     systemPackages = with pkgs; [

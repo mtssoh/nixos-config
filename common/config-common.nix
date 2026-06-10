@@ -4,6 +4,7 @@
   users.users.matias = {
     isNormalUser = true;
     shell = pkgs.zsh;
+    extraGroups = [ "wheel" "docker" "users" ];
   };
 
   time.timeZone = "America/Asuncion";
@@ -31,6 +32,8 @@
     zsh.enable = true;
     nix-ld.enable = true;
   };
+  
+  virtualisation.docker.enable = true;
 
   nixpkgs.config.allowUnfree = true;
 
