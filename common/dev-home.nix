@@ -5,7 +5,11 @@
       enable = true;
       defaultEditor = true;  
       extraPackages = [ pkgs.nil ];
-      settings.theme = "adwaita-dark";
+      settings.theme = "rose_pine_moon_transparent";
+      themes.rose_pine_moon_transparent = {
+        inherits = "rose_pine_moon";
+        "ui.background" = {};
+      };
     };
 
     git = {
