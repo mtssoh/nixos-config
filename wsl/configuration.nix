@@ -7,7 +7,7 @@
     ../common/config-common.nix
   ];
 
-  networking.hostName = "win11";
+  networking.hostName = "nix-wsl";
   
   users.users.matias.uid = 1001;
 

@@ -20,12 +20,6 @@
     htop awscli2 cloudflared
   ];
 
-  services = {
-    openssh.enable = true;
-    tailscale.enable = true;
-  };
-
-
   home-manager.users.matias = import ./home.nix;
 
   system.stateVersion = "26.05"; 

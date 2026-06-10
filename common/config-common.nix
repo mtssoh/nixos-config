@@ -32,6 +32,11 @@
     zsh.enable = true;
     nix-ld.enable = true;
   };
+
+  services = {
+    openssh.enable = true;
+    tailscale.enable = true;
+  };
   
   virtualisation.docker.enable = true;
 
