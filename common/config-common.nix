@@ -40,7 +40,7 @@
 
   stylix = {
     enable = true;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/kanagawa.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/gigavolt.yaml";
     opacity.terminal = 0.9;
     fonts = {
       monospace = {
