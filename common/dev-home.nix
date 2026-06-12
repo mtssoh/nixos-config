@@ -1,11 +1,11 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 {
   programs = {
     helix = {
       enable = true;
       defaultEditor = true;  
       extraPackages = [ pkgs.nil ];
-      settings.theme = "theme_transparent";
+      settings.theme = lib.mkForce "theme_transparent";
       themes.theme_transparent = {
         inherits = "stylix";
         "ui.background" = {};

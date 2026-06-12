@@ -39,7 +39,8 @@
   };
 
   stylix = {
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
+    enable = true;
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/kanagawa.yaml";
     opacity.terminal = 0.9;
     fonts = {
       monospace = {
@@ -50,6 +51,7 @@
         package = pkgs.noto-fonts-color-emoji;
         name = "Noto Color Emoji";
       };
+      sizes.terminal = 13;
     };
   };  
 

@@ -44,15 +44,6 @@
     noto-fonts-color-emoji
   ];
 
-  programs.foot = {
-    enable = true;
-    enableZshIntegration = true;
-    settings = {
-      main.pad = "20x20";
-      csd.preferred = "none";
-    };
-  };
-
   hardware.graphics.enable = true;
   nixpkgs.overlays = [
     (final: prev: {
