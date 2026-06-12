@@ -7,7 +7,7 @@
       extraPackages = [ pkgs.nil ];
       settings.theme = "theme_transparent";
       themes.theme_transparent = {
-        inherits = "monokai_pro";
+        inherits = "stylix";
         "ui.background" = {};
       };
     };

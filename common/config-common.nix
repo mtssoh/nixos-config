@@ -37,7 +37,21 @@
     openssh.enable = true;
     tailscale.enable = true;
   };
-  
+
+  stylix = {
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
+    opacity.terminal = 0.9;
+    fonts = {
+      monospace = {
+        package = pkgs.nerd-fonts.geist-mono;
+        name = "GeistMono Nerd Font";
+      };
+      emoji = {
+        package = pkgs.noto-fonts-color-emoji;
+        name = "Noto Color Emoji";
+      };
+    };
+  };  
 
   nixpkgs.config.allowUnfree = true;
   nix.settings.experimental-features = [ "nix-command" "flakes" ];

@@ -47,16 +47,12 @@
   programs.foot = {
     enable = true;
     enableZshIntegration = true;
-    theme = "monokai-pro";
     settings = {
-      main = {
-        font = "GeistMono Nerd Font:size=13";
-        pad = "20x20";
-      };
+      main.pad = "20x20";
       csd.preferred = "none";
-      colors-dark.alpha = "0.90";
     };
   };
+
   hardware.graphics.enable = true;
   nixpkgs.overlays = [
     (final: prev: {
