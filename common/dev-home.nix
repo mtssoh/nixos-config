@@ -5,9 +5,9 @@
       enable = true;
       defaultEditor = true;  
       extraPackages = [ pkgs.nil ];
-      settings.theme = "rose_pine_moon_transparent";
-      themes.rose_pine_moon_transparent = {
-        inherits = "rose_pine_moon";
+      settings.theme = "theme_transparent";
+      themes.theme_transparent = {
+        inherits = "monokai_pro";
         "ui.background" = {};
       };
     };

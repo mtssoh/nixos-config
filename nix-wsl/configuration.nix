@@ -2,8 +2,6 @@
 
 {
   imports = [
-    <nixos-wsl/modules>
-    <home-manager/nixos>
     ../common/config-common.nix
   ];
 
@@ -42,21 +40,21 @@
   };
 
   fonts.packages = with pkgs; [
-    nerd-fonts.hack
-    nerd-fonts.fira-code
+    nerd-fonts.geist-mono
+    noto-fonts-color-emoji
   ];
 
   programs.foot = {
     enable = true;
     enableZshIntegration = true;
-    theme = "rose-pine-moon";
+    theme = "monokai-pro";
     settings = {
       main = {
-        font = "Hack Nerd Font:size=12";
+        font = "GeistMono Nerd Font:size=13";
         pad = "20x20";
       };
       csd.preferred = "none";
-      colors-dark.alpha = "0.95";
+      colors-dark.alpha = "0.90";
     };
   };
   hardware.graphics.enable = true;

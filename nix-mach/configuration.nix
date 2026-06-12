@@ -5,7 +5,6 @@
   imports =
     [ 
       ./hardware-configuration.nix
-      <home-manager/nixos>
       ../common/config-common.nix
     ];
 
