@@ -14,6 +14,7 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   networking.hostName = "nix-mach";
+  networking.networkmanager.enable = true;
 
   environment.systemPackages = with pkgs; [
     htop awscli2 cloudflared

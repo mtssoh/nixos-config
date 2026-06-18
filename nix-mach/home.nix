@@ -5,10 +5,13 @@
     ../common/dev-home.nix
   ];
 
+  dconf.enable = false;
+
   home = {
     stateVersion = "26.05";
     username = "matias";
     homeDirectory = "/home/matias";
     packages = with pkgs; [ fastfetch eza fd tldr ripgrep ];
   };
+
 }
