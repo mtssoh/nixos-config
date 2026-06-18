@@ -22,7 +22,7 @@
     helix = {
       extraPackages = with pkgs; [
         jdt-language-server clang-tools
-        pyright
+        pyright haskell-language-server
       ];
       languages = {
         language-server = {

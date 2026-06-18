@@ -43,6 +43,10 @@
     nerd-fonts.geist-mono
     noto-fonts-color-emoji
   ];
+  fonts.fontconfig.defaultFonts = {
+    emoji = [ "Noto Color Emoji" ];
+    monospace = [ "GeistMono Nerd Font" "Noto Color Emoji" ];
+  };
 
   hardware.graphics.enable = true;
   nixpkgs.overlays = [

@@ -24,7 +24,7 @@
   };
 
   environment = {
-    systemPackages = with pkgs; [ rsync wget ];
+    systemPackages = with pkgs; [ rsync wget dnslookup ];
     variables.COLORTERM = "truecolor";
   };
 
@@ -40,7 +40,7 @@
 
   stylix = {
     enable = true;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/github-dark.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/monokai.yaml";
     opacity.terminal = 0.9;
     fonts = {
       monospace = {
