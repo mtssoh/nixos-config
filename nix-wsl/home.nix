@@ -18,6 +18,10 @@
 
   services.ssh-agent.enable = true;
 
+  xdg.configFile."ghc/ghci.conf".text = ''
+    :set prompt "λ "    
+  '';
+
   programs = {
     helix = {
       extraPackages = with pkgs; [
