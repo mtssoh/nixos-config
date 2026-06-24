@@ -12,7 +12,7 @@
   environment = {
     systemPackages = with pkgs; [
       zip unzip claude-code postgresql
-      curl cloudflared 
+      curl cloudflared opencode 
 
       (pkgs.writeShellScriptBin "foot-tmux" ''
           cd ~
