@@ -53,6 +53,7 @@
         csd.preferred = "none";
       };
     };
+    opencode.enable = true;
   };
 
 }
