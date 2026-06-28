@@ -17,7 +17,7 @@
   networking.networkmanager.enable = true;
 
   environment.systemPackages = with pkgs; [
-    htop awscli2 cloudflared
+    htop awscli2 cloudflared nmap gobuster
   ];
 
   virtualisation.docker.enable = true;

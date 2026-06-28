@@ -24,7 +24,9 @@
   };
 
   environment = {
-    systemPackages = with pkgs; [ rsync wget dnslookup ];
+    systemPackages = with pkgs; [
+      rsync wget dnslookup traceroute
+    ];
     variables.COLORTERM = "truecolor";
   };
 
@@ -40,7 +42,7 @@
 
   stylix = {
     enable = true;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/monokai.yaml";
     fonts = {
       monospace = {
         package = pkgs.nerd-fonts.geist-mono;
