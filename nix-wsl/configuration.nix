@@ -26,7 +26,7 @@
     docker-desktop.enable = true;
     useWindowsDriver = true;
     interop = {
-      includePath = false;
+      includePath = true;
       register = true;
     };
   };
